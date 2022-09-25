@@ -4,6 +4,6 @@
     </head>
 <body>
     <h2>Hello World tset!</h2>
-    <a href="/student">To students</a>
+    <a href="/simpleCRUD/student">To students</a>
 </body>
 </html>
