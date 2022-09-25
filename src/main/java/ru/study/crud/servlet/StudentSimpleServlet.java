@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet(urlPatterns = {"/simpleCRUD/student", "/simpleCRUD/delete", "/simpleCRUD/create"})
+@WebServlet("/")
 public class StudentSimpleServlet extends HttpServlet {
 
     private UserServiceImpl service;
@@ -32,9 +32,9 @@ public class StudentSimpleServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getServletPath();
         switch (action) {
-            case "/simpleCRUD/delete":
+            case "/delete":
                 deleteStudent(req, resp);
-            case "/simpleCRUD/create":
+            case "/create":
                 createStudent(req, resp);
             default:
                 listStudent(req, resp);
