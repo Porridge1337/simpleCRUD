@@ -16,7 +16,7 @@
             <li>
                 Фамилия <c:out value="${student.surname}"/>
             </li>
-            <a href="/delete?id=<c:out value='${student.id}'/>">Delete</a>
+            <a href="/simpleCRUD/delete?id=<c:out value='${student.id}'/>">Delete</a>
         </ul>
     </c:forEach>
     <h2>создание нового пользователя</h2>
