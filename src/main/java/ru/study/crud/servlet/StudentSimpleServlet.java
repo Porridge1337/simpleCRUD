@@ -16,7 +16,7 @@ import java.util.Map;
 @WebServlet(urlPatterns = {"/student", "/delete", "/create"})
 public class StudentSimpleServlet extends HttpServlet {
 
-    private UserService service;
+    private UserServiceImpl service;
     private final static String index = "/WEB-INF/view/students-page.jsp";
 
     @Override
