@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<StudentDto> findAllStudent() {
-        List<StudentDto> students = new ArrayList<>(studentDtoMap.values());
+        List<StudentDto> students = new ArrayList<StudentDto>(studentDtoMap.values());
         return students;
     }
 
