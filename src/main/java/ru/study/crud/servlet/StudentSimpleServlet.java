@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-//@WebServlet(urlPatterns = {"/student", "/delete", "/create"})
+@WebServlet("/")
 public class StudentSimpleServlet extends HttpServlet {
 
     private UserServiceImpl service;
