@@ -13,10 +13,10 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet(urlPatterns = {"/student", "/delete", "/create"})
+@WebServlet(urlPatterns = {"/simpleCRUD/student", "/simpleCRUD/delete", "/simpleCRUD/create"})
 public class StudentSimpleServlet extends HttpServlet {
 
-    private UserServiceImpl service;
+    private UserService service;
     private final static String index = "/WEB-INF/view/students-page.jsp";
 
     @Override
@@ -32,9 +32,9 @@ public class StudentSimpleServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getServletPath();
         switch (action) {
-            case "/delete":
+            case "/simpleCRUD/delete":
                 deleteStudent(req, resp);
-            case "/create":
+            case "/simpleCRUD/create":
                 createStudent(req, resp);
             default:
                 listStudent(req, resp);
