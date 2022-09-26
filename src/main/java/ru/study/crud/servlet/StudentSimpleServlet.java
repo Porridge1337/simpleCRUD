@@ -26,6 +26,7 @@ public class StudentSimpleServlet extends HttpServlet {
         students.put(2, new StudentDto(2, "Alexandr", "Krivenchuk"));
         students.put(3, new StudentDto(3, "Alexey", "Abramov"));
         service = new UserServiceImpl(students);
+        System.out.println("Проверка триггера дженкинса");
     }
 
     @Override
